@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AccountApplicationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression(failed)">
+    <parameter name="password" value="123456"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com"/>
+    <parameter name="username" value="shubham"/>
+    <classes>
+      <class name="testNg_Concept.ParametersConcepts">
+        <methods>
+          <include name="initilization"/>
+          <include name="dashboardTest"/>
+          <include name="pimTest"/>
+          <include name="closeResources"/>
+          <include name="validateloginTest"/>
+        </methods>
+      </class> <!-- testNg_Concept.ParametersConcepts -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [AccountApplicationSuite] -->
